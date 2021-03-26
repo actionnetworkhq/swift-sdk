@@ -200,7 +200,7 @@ open class DefaultEventDispatcher: BackgroundingCallbacks, OPTEventDispatcher {
         }
         
         task.resume()
-        
+        session.finishTasksAndInvalidate()
     }
     
     func applicationDidEnterBackground() {
